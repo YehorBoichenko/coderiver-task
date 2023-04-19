@@ -14,13 +14,15 @@ export function AppLogo(): JSX.Element {
     function playAnimation() {
       const logoRef = document.querySelector(
         `.${styles.brandLogo}`
-      ) as HTMLElement;
-      logoRef.className = `${styles.brandLogo} ${styles.brandLogoAnimation}`;
+      ) as HTMLElement | null;
+      if (logoRef) {
+        logoRef.className = `${styles.brandLogo} ${styles.brandLogoAnimation}`;
 
-      setTimeout(() => {
-        logoRef.className = `${styles.brandLogo}`;
-        setTimeout(playAnimation, 12000);
-      }, 2000);
+        setTimeout(() => {
+          logoRef.className = `${styles.brandLogo}`;
+          setTimeout(playAnimation, 12000);
+        }, 2000);
+      }
     }
     playAnimation();
   }, []);
@@ -31,12 +33,14 @@ export function AppLogo(): JSX.Element {
   function handleLogoMouseOver() {
     const logoRef = document.querySelector(
       `.${styles.brandLogo}`
-    ) as HTMLElement;
-    logoRef.className = `${styles.brandLogo} ${styles.brandLogoAnimation}`;
+    ) as HTMLElement | null;
+    if (logoRef) {
+      logoRef.className = `${styles.brandLogo} ${styles.brandLogoAnimation}`;
 
-    setTimeout(() => {
-      logoRef.className = `${styles.brandLogo}`;
-    }, 2000);
+      setTimeout(() => {
+        logoRef.className = `${styles.brandLogo}`;
+      }, 2000);
+    }
   }
 
   return (
