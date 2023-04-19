@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "./BuyButton.module.css";
+import { Link } from "react-router-dom";
 /**
  * A button component that animates when the mouse cursor hovers over it.
  */
@@ -19,12 +20,14 @@ export function BuyButton(): JSX.Element {
   }
 
   return (
-    <button
-      type="button"
-      className={styles.buyButton}
-      onMouseOver={handleMouseOver}
-    >
-      Buy
-    </button>
+    <Link to="/cart">
+      <button
+        type="button"
+        className={styles.buyButton}
+        onMouseOver={handleMouseOver}
+      >
+        Buy
+      </button>
+    </Link>
   );
 }
