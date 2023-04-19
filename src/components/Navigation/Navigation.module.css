@@ -1,0 +1,36 @@
+.navigationList {
+  display: none;
+  gap: 40px;
+  font-size: 18px;
+  line-height: 1.16;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .navigationList {
+    display: flex;
+    gap: 22px;
+    margin-left: auto;
+    font-size: 17px;
+    text-align: initial;
+  }
+}
+
+@media (min-width: 1200px) {
+  .navigationList {
+    gap: 79px;
+  }
+}
+
+.navigationItem {
+  font-size: 20px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-bottom: 2px solid transparent;
+  transition-duration: 0.7s;
+}
+
+.navigationItem:hover {
+  color: gray;
+  transform: scale(1.1);
+}

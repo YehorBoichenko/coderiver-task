@@ -1,0 +1,30 @@
+.platforms {
+  position: relative;
+  display: flex;
+  height: 55px;
+}
+
+.platformsItem {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 1px solid #e1e3e9;
+  background-color: #2d3240;
+}
+
+.platformsItem + .platformsItem {
+  left: 43px;
+}
+
+@media (min-width: 768px) {
+  .platformsItem {
+    width: 55px;
+    height: 55px;
+  }
+}

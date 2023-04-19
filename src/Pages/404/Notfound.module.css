@@ -1,0 +1,28 @@
+.bl_wrapper {
+  margin: 10px auto;
+  max-width: 60vw;
+}
+
+.btn_home {
+  position: relative;
+  display: block;
+  width: 120px;
+  color: #fff;
+  font-weight: 700;
+  text-align: center;
+  margin: 0 auto;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #be6440;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: 0.2s all;
+  z-index: 3;
+}
+
+.btn_home:hover,
+.btn_home:focus {
+  transition: 0.2s all;
+  color: #fff;
+  background-color: #f00;
+}

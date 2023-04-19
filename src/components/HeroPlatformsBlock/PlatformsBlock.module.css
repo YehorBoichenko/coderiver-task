@@ -1,0 +1,11 @@
+.platformsText {
+  margin-top: 12px;
+  font-size: 16px;
+  line-height: 1.16;
+}
+
+@media (min-width: 1200px) {
+  .platformsText {
+    font-size: 18px;
+  }
+}

@@ -1,0 +1,30 @@
+.stripe {
+  display: none;
+  position: absolute;
+  top: -42px;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 349px;
+  fill: none;
+  stroke: #647ce9;
+  stroke-linecap: round;
+  stroke-width: 6px;
+  stroke-dasharray: 2000;
+  stroke-dashoffset: 2000;
+  animation: stripe 10s linear forwards infinite;
+}
+
+@media (min-width: 1200px) {
+  .stripe {
+    display: block;
+  }
+}
+@keyframes stripe {
+  0% {
+    stroke-dashoffset: 2000;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
